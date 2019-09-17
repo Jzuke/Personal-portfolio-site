@@ -1,0 +1,162 @@
+
+html{
+	-webkit-tap-highlight-color: transparent;
+	height:100%
+}
+
+body{
+	margin:0;
+	height:100%
+}
+
+
+.name {
+	font-size:1.5em;
+	font-family: 'Chivo', sans-serif;
+  font-weight:900;
+  padding:8px;
+	}
+
+.intro p{
+  padding-bottom:10px;
+  margin:0 0 0 0;
+  line-height:1.5em;
+  font-family: 'Lato', sans-serif;
+  }
+
+.job-title {
+  margin:0;
+  line-height:1rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.main-container{
+  height:100%;
+  width:850px;
+  padding: 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container{
+  width: auto;
+}
+
+.flex-item{
+  align-self: center;
+}
+
+.clickswitch{
+	color:#18b4d7;
+	margin:0 auto;
+	font-family: 'Chivo', sans-serif;
+  font-weight:500;
+	cursor: pointer;
+  font-size:1.25em;
+  margin-bottom:10px;
+  padding:0;
+}
+
+#name-container{
+  text-align:center;
+  padding-right:1em;
+  line-height:2.25em;
+  width:400px;
+}
+
+#content {
+  list-style:none;
+}
+
+/********** PORTFOLIO **************/
+
+.portfolio-link{
+  color:#18b4d7;
+  font-family: 'Chivo', sans-serif;
+  font-weight:500;
+  padding-top:2em;
+  list-style:none;
+}
+
+.portfolio-desc {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300i;
+  font-size:12px;
+  font-style: italic;
+  list-style:none;
+}
+
+#portfolio-wrapper {
+  text-align: left;
+  margin:auto;
+}
+
+#portfolio {
+  padding:0;
+}
+
+#portfolio-header{
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  margin-bottom:0;
+  margin:0;
+}
+
+#left-bar{
+  float:left;
+  padding-right:1em;
+  width:5px;
+  height:300px;
+  border-left:2px solid black;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color:#18b4d7;
+}
+
+a:visited{
+  color:#18b4d7;
+}
+
+/*Media Query*/
+
+@media screen
+  and (max-width: 866px)
+  {
+
+  .main-container{
+      width:100%;
+      margin:auto;
+      display:inline-block;
+    }
+
+  #portfolio-wrapper{
+    width:400px;
+    margin:auto;
+
+}
+
+  #left-bar{
+    margin-top:0;
+    width:0px;
+    height:0;
+    border-left:none;
+}
+
+  #name-container{
+    margin:auto;
+    /*padding-left:12.5em;*/
+    text-align: left;
+    padding-top:5em;
+    border-bottom: 2px solid black;
+    padding-bottom:10px;
+}
