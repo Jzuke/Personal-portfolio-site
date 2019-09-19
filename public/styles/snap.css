@@ -20,7 +20,7 @@
   text-decoration:none;
   color:#18b4d7;
   font-family:'Chivo', sans-serif;
-  font-size:1.5em;
+  font-size:20px;
   position:absolute;
   top:50px;
   left:50px;
@@ -37,13 +37,11 @@
 
 .intro {
   font-family:'Lato';
-  font-size:1em;
 }
 
 #header{
   margin:auto;
   padding:0;
-  font-size:1.5em;
   font-family:'Chivo', sans-serif;
   width:300px;
 }
@@ -56,6 +54,24 @@
   font-size: 14px;
   font-family: inherit;
 }
+
+@media screen and (max-width: 866px) {
+  .main-container{
+    width:90%;
+  }
+    #header{
+      border:none;
+      font-size:1.5em;
+      width:auto;
+    }
+    .intro{
+      font-size:1em;
+    }
+    .home{
+      font-size:1.25em;
+    }
+  }
+
 #snap-modal-content,
 #snap-modal-content .story-viewer,
 #snap-modal-content .story-viewer > .slides,
@@ -491,7 +507,7 @@
   display: block;
   box-sizing: border-box;
   font-size: 0;
-  max-height: 90px;
+  max-height: 200px;
   height: 18vw;
   overflow: hidden;
   transition: transform 0.2s;
@@ -1308,3 +1324,5 @@ h1.Snapssenger {
 .stories.snapssenger .story.seen {
   opacity: 0.5;
 }
+
+
