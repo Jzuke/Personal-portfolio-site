@@ -1,34 +1,65 @@
 
 html{
 	-webkit-tap-highlight-color: transparent;
-	height:100%
+	height:100%;
 }
 
 body{
 	margin:0;
-	height:100%
+  height:100%;
+  box-sizing: border-box;
+}
+
+.frame-border {
+  background-color: #18b4d7;
+  position: fixed;
+}
+
+.frame-border-top {
+  top: 0;
+  left: 0;
+  right: 0;
+  height:10px;
+}
+
+.frame-border-right {
+  top: -50px;
+  right: 0;
+  bottom: -50px;
+  width:10px;
+}
+
+.frame-border-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:10px;
+}
+
+.frame-border-left {
+  top: -50px;
+  left: 0;
+  bottom: -50px;
+  width:10px;
 }
 
 
 .name {
 	font-size:1.5em;
-	font-family: 'Chivo', sans-serif;
-  font-weight:900;
+	font-family: acumin-pro-condensed, sans-serif;
+  font-weight: 900;
+  font-style: normal;
   padding:8px;
 	}
 
-.intro p{
+.intro p {
   padding-bottom:10px;
   margin:0 0 0 0;
   line-height:1.5em;
-  font-family: 'Lato', sans-serif;
+  font-family: acumin-pro-condensed, sans-serif;
+  font-weight: 300;
+  font-style: normal;
   }
-
-.job-title {
-  margin:0;
-  line-height:1rem;
-  font-family: 'Lato', sans-serif;
-}
 
 .main-container{
   height:100%;
@@ -56,8 +87,9 @@ body{
 .clickswitch{
 	color:#18b4d7;
 	margin:0 auto;
-	font-family: 'Chivo', sans-serif;
-  font-weight:500;
+	font-family: acumin-pro-condensed, sans-serif;
+  font-weight: 600;
+  font-style: normal;
 	cursor: pointer;
   font-size:1.25em;
   margin-bottom:10px;
@@ -78,15 +110,18 @@ body{
 
 .portfolio-link{
   color:#18b4d7;
-  font-family: 'Chivo', sans-serif;
-  font-weight:500;
-  padding-top:2em;
+  font-family: acumin-pro-condensed, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding-top:1em;
   list-style:none;
 }
 
 .portfolio-desc {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300i;
+  font-family: acumin-pro-condensed, sans-serif;
+  letter-spacing: .25px;
+  font-weight: 200;
+  font-style: italic;
   font-size:12px;
   font-style: italic;
   list-style:none;
@@ -102,8 +137,9 @@ body{
 }
 
 #portfolio-header{
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
+  font-family: acumin-pro-condensed, sans-serif;
+  font-weight: 600;
+  font-style: normal;
   margin-bottom:0;
   margin:0;
 }
@@ -151,11 +187,12 @@ a:visited{
     border-left:none;
 }
 
-  #name-container{
+  #name-container {
     margin:auto;
     width:250px;
     text-align: left;
     padding-top:5em;
     border-bottom: 2px solid black;
     padding-bottom:10px;
+}
 }
