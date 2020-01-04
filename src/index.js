@@ -1,11 +1,11 @@
 import "core-js/stable"
 import "regenerator-runtime/runtime"
 
-let things = ['stuff', 'apps', 'websites', 'IoT things', 'animations', 'graphics', 'illustrations', 'music', 'houseboats', 'friends']
+let things = ['stuff', 'products', 'apps', 'websites', 'IoT things', 'animations', 'graphics', 'illustrations', 'music', 'boxes', 'houseboats', 'friends']
 const contentEl = document.querySelector('#content')
 contentEl.textContent = things[0]
 
-document.querySelector('#content').addEventListener('click', (e) => {
+document.querySelector('#content').addEventListener('click', () => {
 	contentEl.classList.add('fadeOut')
 	let nextItem
 	let index = things.indexOf(contentEl.innerHTML)
